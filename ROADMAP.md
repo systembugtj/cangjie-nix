@@ -24,12 +24,17 @@ Project codename **cangjie** — Linux Nix flake repository.
 | `direnv` + `.envrc` | Done |
 | `CONTRIBUTING.md` | Done |
 
-### Phase 2 — Packages (planned)
+### Phase 2 — Packages (in progress)
 
-- Real derivations replacing placeholder `packages.default`
+- **gopdf** — [RFC 0003](.spec/rfc/0003-gopdf-nix-package.md) (`nix/gopdf.nix`)
 - Overlays or package sets as needed
 
-*Requires RFC 0003+ (not yet authored).*
+| Milestone | Target | Status |
+|-----------|--------|--------|
+| RFC 0003 drafted | 2026-07-26 | Done |
+| `packages.gopdf` derivation | 2026-07-26 | Done |
+| `nix build .#gopdf` smoke test | 2026-07-26 | Done |
+| CI builds `gopdf` | TBD | Pending |
 
 ## RFC register
 
@@ -37,3 +42,4 @@ Project codename **cangjie** — Linux Nix flake repository.
 |-----|-------|--------|-------|
 | 0001 | Linux Nix Flake Foundation | Approved | 0 |
 | 0002 | CI and Contributor UX | Approved | 1 |
+| 0003 | gopdf Nix Package | Draft | 2 |

@@ -25,3 +25,6 @@ jobs:
 
       - name: Build default package
         run: nix build
+
+      - name: Build gopdf
+        run: nix build .#gopdf

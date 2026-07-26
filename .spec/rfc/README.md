@@ -25,7 +25,7 @@ Every RFC must include:
 
 | ID | Title | Status | Roadmap phase |
 |----|-------|--------|---------------|
-| — | — | — | — |
+| [0003](0003-gopdf-nix-package.md) | gopdf Nix Package | Draft | 2 |
 
 ## Completed RFCs
 

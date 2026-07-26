@@ -66,7 +66,7 @@ Replaced `nixfmt-rfc-style` with `pkgs.nixfmt`.
 ## Acceptance criteria
 
 - [x] RFC 0002 status is **Approved**
-- [x] CI workflow runs `flake check`, `fmt --check`, and `build` on PR/push
+- [x] CI workflow runs `flake check`, format check, and `build` on PR/push
 - [x] `.envrc` loads dev shell via direnv
 - [x] `CONTRIBUTING.md` covers Nix workflow and RFC process
 

@@ -34,6 +34,16 @@ Operational task list. Completed RFCs archived under [`.spec/rfc/completed/`](.s
 | T-0002-05 | Switch formatter to `pkgs.nixfmt` | Done |
 | T-0002-06 | Verify CI passes on push | Done |
 
+## Phase 2 — gopdf package (RFC 0003)
+
+| ID | Task | Status |
+|----|------|--------|
+| T-0003-01 | Add `nix/gopdf.nix` | Done |
+| T-0003-02 | Wire `packages.gopdf` + `default` | Done |
+| T-0003-03 | Verify `nix build .#gopdf` on Linux | Done |
+| T-0003-04 | CI builds `gopdf` | To do |
+| T-0003-05 | gopdf-cli site documents Nix install | To do |
+
 ## Current focus
 
-**`(CURRENT)`** Phase 2 — draft RFC 0003 for real packages.
+**`(CURRENT)`** T-0003-04 — push cangjie-nix and confirm CI builds `gopdf`.

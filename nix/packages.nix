@@ -1,8 +1,9 @@
 { pkgs }:
 
+let
+  gopdf = pkgs.callPackage ./gopdf.nix { };
+in
 {
-  # Default package placeholder — replace with real derivations.
-  default = pkgs.writeShellScriptBin "cangjie" ''
-    echo "cangjie flake — add packages in nix/packages.nix"
-  '';
+  inherit gopdf;
+  default = gopdf;
 }
