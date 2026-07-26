@@ -4,26 +4,25 @@ Project codename **cangjie** — Linux Nix flake repository.
 
 ## Phases
 
-### Phase 0 — Foundation (current)
+### Phase 0 — Foundation ✓
 
-**RFC:** [0001 Linux Nix Flake Foundation](docs/rfc/0001-linux-nix-flake-foundation.md)
+**RFC:** [0001 Linux Nix Flake Foundation](.spec/rfc/completed/0001-linux-nix-flake-foundation.md)
 
-Establish flake skeleton, dev shell, formatter, and lockfile. No application packages yet.
+| Milestone | Status |
+|-----------|--------|
+| RFC 0001 approved | Done |
+| Flake scaffold + `flake.lock` | Done |
+| `nix flake check` / `nix build` verified | Done |
 
-| Milestone | Target | Status |
-|-----------|--------|--------|
-| RFC 0001 drafted | 2026-07-26 | Done |
-| Flake scaffold | 2026-07-26 | Done |
-| `flake.lock` + `nix flake check` | TBD | Pending |
-| CI (`flake check`, `fmt`) | TBD | Pending |
+### Phase 1 — CI & contributor UX ✓
 
-### Phase 1 — CI & contributor UX (planned)
+**RFC:** [0002 CI and Contributor UX](.spec/rfc/completed/0002-ci-contributor-ux.md)
 
-- GitHub Actions on Linux
-- Optional `direnv` / `.envrc`
-- CONTRIBUTING with Nix workflow
-
-*Requires RFC 0002 (not yet authored).*
+| Milestone | Status |
+|-----------|--------|
+| GitHub Actions CI | Done |
+| `direnv` + `.envrc` | Done |
+| `CONTRIBUTING.md` | Done |
 
 ### Phase 2 — Packages (planned)
 
@@ -36,4 +35,5 @@ Establish flake skeleton, dev shell, formatter, and lockfile. No application pac
 
 | RFC | Title | Status | Phase |
 |-----|-------|--------|-------|
-| 0001 | Linux Nix Flake Foundation | Draft | 0 |
+| 0001 | Linux Nix Flake Foundation | Approved | 0 |
+| 0002 | CI and Contributor UX | Approved | 1 |

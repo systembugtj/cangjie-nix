@@ -6,10 +6,10 @@ Request for Comments documents for **cangjie** (project codename).
 
 | Rule | Value |
 |------|-------|
-| Location | `docs/rfc/` |
+| Location | `.spec/rfc/` |
 | Naming | `NNNN-short-slug.md` (zero-padded, 4 digits) |
 | Status values | `Draft` · `Under Review` · `Approved` · `Superseded` · `Rejected` |
-| Archive | `docs/rfc/completed/` · `docs/rfc/rejected/` |
+| Archive | `.spec/rfc/completed/` · `.spec/rfc/rejected/` |
 
 ## Required sections
 
@@ -25,7 +25,14 @@ Every RFC must include:
 
 | ID | Title | Status | Roadmap phase |
 |----|-------|--------|---------------|
-| [0001](0001-linux-nix-flake-foundation.md) | Linux Nix Flake Foundation | Draft | Phase 0 |
+| — | — | — | — |
+
+## Completed RFCs
+
+| ID | Title | Completed |
+|----|-------|-----------|
+| [0001](completed/0001-linux-nix-flake-foundation.md) | Linux Nix Flake Foundation | 2026-07-26 |
+| [0002](completed/0002-ci-contributor-ux.md) | CI and Contributor UX | 2026-07-26 |
 
 ## Related docs
 

@@ -3,7 +3,8 @@
 pkgs.mkShell {
   packages = with pkgs; [
     git
-    nixfmt-rfc-style
+    nixfmt
+    direnv
   ];
 
   shellHook = ''

@@ -13,23 +13,25 @@
       flake-utils,
       ...
     }:
-    flake-utils.lib.eachSystem [
-      "x86_64-linux"
-      "aarch64-linux"
-    ] (
-      system:
-      let
-        pkgs = nixpkgs.legacyPackages.${system};
-        packages = import ./nix/packages.nix { inherit pkgs; };
-      in
-      {
-        packages = packages // {
-          default = packages.default;
-        };
+    flake-utils.lib.eachSystem
+      [
+        "x86_64-linux"
+        "aarch64-linux"
+      ]
+      (
+        system:
+        let
+          pkgs = nixpkgs.legacyPackages.${system};
+          packages = import ./nix/packages.nix { inherit pkgs; };
+        in
+        {
+          packages = packages // {
+            default = packages.default;
+          };
 
-        devShells.default = import ./nix/devshell.nix { inherit pkgs; };
+          devShells.default = import ./nix/devshell.nix { inherit pkgs; };
 
-        formatter = pkgs.nixfmt-rfc-style;
-      }
-    );
+          formatter = pkgs.nixfmt;
+        }
+      );
 }
