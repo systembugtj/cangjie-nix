@@ -19,7 +19,9 @@ jobs:
         run: nix flake check
 
       - name: Format check
-        run: nix fmt --check .
+        run: |
+          nix fmt .
+          git diff --exit-code -- '*.nix' flake.nix
 
       - name: Build default package
         run: nix build

@@ -24,8 +24,8 @@ direnv allow
 | `nix flake check` | Evaluate all flake outputs |
 | `nix build` | Build `packages.default` |
 | `nix develop` | Enter development shell |
-| `nix fmt` | Format Nix files |
-| `nix fmt --check .` | Verify formatting (CI) |
+| `nix fmt .` | Format Nix files |
+| `nix fmt . && git diff --exit-code` | Verify formatting (CI) |
 
 ## Updating dependencies
 

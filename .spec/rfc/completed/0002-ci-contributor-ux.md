@@ -32,7 +32,7 @@ File: `.github/workflows/ci.yml`
 | Install Nix | `DeterminateSystems/nix-installer-action` | Reproducible Nix on runner |
 | Cache | `DeterminateSystems/magic-nix-cache-action` | Faster builds |
 | Check | `nix flake check` | Evaluate outputs on `x86_64-linux` |
-| Format | `nix fmt --check .` | Enforce formatter |
+| Format | `nix fmt .` + `git diff --exit-code` | Enforce formatter |
 | Build | `nix build` | Verify default package |
 
 **Runner:** `ubuntu-latest` (`x86_64-linux` only).
