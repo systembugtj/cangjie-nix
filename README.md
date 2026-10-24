@@ -7,6 +7,7 @@ Linux Nix flake for **systembug** CLI packages.
 | Package | Upstream | Install |
 |---------|----------|---------|
 | **gopdf** | [gopdfjs/gopdf-cli](https://github.com/gopdfjs/gopdf-cli) | `nix profile install github:systembugtj/cangjie-nix#gopdf` |
+| **reasongraph** | [borg0ai/dx-reasongraph](https://github.com/borg0ai/dx-reasongraph) | `nix profile install github:systembugtj/cangjie-nix#reasongraph` |
 
 ## Quick start
 

@@ -28,3 +28,6 @@ jobs:
 
       - name: Build gopdf
         run: nix build .#gopdf
+
+      - name: Build reasongraph
+        run: nix build .#reasongraph
