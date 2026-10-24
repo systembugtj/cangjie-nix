@@ -36,7 +36,13 @@ stdenv.mkDerivation (finalAttrs: {
   pnpmInstallFlags = [ "--shamefully-hoist" ];
 
   pnpmDeps = fetchPnpmDeps {
-    inherit (finalAttrs) pname version src pnpmWorkspaces pnpmInstallFlags;
+    inherit (finalAttrs)
+      pname
+      version
+      src
+      pnpmWorkspaces
+      pnpmInstallFlags
+      ;
     inherit pnpm;
     fetcherVersion = 4;
     hash = "sha256-+yOlh3DmJPcTjkmPTgmR4KEwdTdi4Jk8qmHqXglzwG0=";
