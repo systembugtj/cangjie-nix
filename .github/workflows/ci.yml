@@ -31,3 +31,23 @@ jobs:
 
       - name: Build reasongraph
         run: nix build .#reasongraph
+
+  ghostty:
+    strategy:
+      fail-fast: false
+      matrix:
+        include:
+          - system: x86_64-linux
+            runner: ubuntu-24.04
+          - system: aarch64-linux
+            runner: ubuntu-24.04-arm
+    runs-on: ${{ matrix.runner }}
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: DeterminateSystems/nix-installer-action@main
+
+      - uses: DeterminateSystems/magic-nix-cache-action@main
+
+      - name: Build Ghostty packages
+        run: nix build -L .#ghostty .#libghostty-vt
