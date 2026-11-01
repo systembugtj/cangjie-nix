@@ -27,6 +27,7 @@ Project codename **cangjie** — Linux Nix flake repository.
 ### Phase 2 — Packages (in progress)
 
 - **gopdf** — [RFC 0003](.spec/rfc/0003-gopdf-nix-package.md) (`nix/gopdf.nix`)
+- **Ghostty** — [RFC 0004](.spec/rfc/0004-ghostty-flake.md) (`nix/ghostty/`, root `packages.ghostty`)
 - Overlays or package sets as needed
 
 | Milestone | Target | Status |
@@ -35,6 +36,7 @@ Project codename **cangjie** — Linux Nix flake repository.
 | `packages.gopdf` derivation | 2026-07-26 | Done |
 | `nix build .#gopdf` smoke test | 2026-07-26 | Done |
 | CI builds `gopdf` | TBD | Pending |
+| Ghostty package and release support | TBD | Planned |
 
 ## RFC register
 
@@ -43,3 +45,4 @@ Project codename **cangjie** — Linux Nix flake repository.
 | 0001 | Linux Nix Flake Foundation | Approved | 0 |
 | 0002 | CI and Contributor UX | Approved | 1 |
 | 0003 | gopdf Nix Package | Draft | 2 |
+| 0004 | Ghostty Linux Package and Release | Approved | 2 |

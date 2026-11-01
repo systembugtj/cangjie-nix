@@ -44,6 +44,16 @@ Operational task list. Completed RFCs archived under [`.spec/rfc/completed/`](.s
 | T-0003-04 | CI builds `gopdf` | To do |
 | T-0003-05 | gopdf-cli site documents Nix install | To do |
 
+## Phase 2 — Ghostty package and release (RFC 0004)
+
+| ID | Task | Status |
+|----|------|--------|
+| T-0004-01 | Move Ghostty Nix expressions under `nix/ghostty/` | Done |
+| T-0004-02 | Add Ghostty source input, package outputs, and dev shells | Done |
+| T-0004-03 | Extend cangjie CI to build Ghostty packages | Done |
+| T-0004-04 | Document manual multi-architecture `gh release` process | Done |
+| T-0004-05 | Build and inspect Ghostty packages on both Linux architectures | In progress — ARM64 passed; x86_64 CI pending (local Rosetta Zig cache crashes) |
+
 ## Current focus
 
-**`(CURRENT)`** T-0003-04 — push cangjie-nix and confirm CI builds `gopdf`.
+**`(CURRENT)`** T-0004-05 — build Ghostty packages on both Linux architectures.

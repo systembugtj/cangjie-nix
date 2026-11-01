@@ -1,0 +1,12 @@
+diff --git a/lib/std/Io/Threaded.zig b/lib/std/Io/Threaded.zig
+index 8ca455c..49e2747 100644
+--- a/lib/std/Io/Threaded.zig
++++ b/lib/std/Io/Threaded.zig
+@@ -15214,6 +15214,6 @@ fn processReplace(userdata: ?*anyopaque, options: process.ReplaceOptions) proces
+         });
+     };
+-    if (is_darwin) if (t.spawnDarwin(
++    if (is_darwin and process.can_spawn) if (t.spawnDarwin(
+         .replace,
+         options.exe,
+         argv_buf.ptr,
