@@ -5,16 +5,16 @@
 }:
 
 let
-  version = "1.3.1";
+  version = "1.3.2";
   base = "https://github.com/borg0ai/dx-issuegraph/releases/download/v${version}";
   sources = {
     x86_64-linux = fetchurl {
       url = "${base}/issuegraph_${version}_linux-amd64.tar.gz";
-      hash = "sha256-wfrEGbhmSK3AiOax+Szr41lrR682t0jqO7e/a2HVL+c=";
+      hash = "sha256-6cy7Oav3wxmm4l5q2rqI6oEUQRQgWizjM63LpDBxrk8=";
     };
     aarch64-linux = fetchurl {
       url = "${base}/issuegraph_${version}_linux-arm64.tar.gz";
-      hash = "sha256-NNfuOEvFFg2LShMPY584vNAKe2kC0ojpCnjlc8RCqSg=";
+      hash = "sha256-664HN0OtTdfEtFmQoU4dM1ZXa91/EJw6iYqCZh9voU0=";
     };
   };
 in
