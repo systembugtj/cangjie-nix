@@ -8,12 +8,12 @@
 
 stdenvNoCC.mkDerivation (finalAttrs: {
   pname = "reasongraph";
-  version = "0.2.4";
+  version = "0.2.5";
 
   # Release tarball from `npm pack`; it unpacks to `package/`.
   src = fetchurl {
     url = "https://github.com/borg0ai/dx-reasongraph/releases/download/v${finalAttrs.version}/borg0ai-reasongraph-${finalAttrs.version}.tgz";
-    hash = "sha256-1XBU0WSpFaDj1OatbBvYmE57+vU/doTahVcpEiQ5IaE=";
+    hash = "sha256-Y+RG16jAUTHX9n0w1f2GxlgTaxUiz0jyKam07cuSB4s=";
   };
 
   sourceRoot = "package";

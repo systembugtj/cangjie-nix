@@ -10,6 +10,7 @@ Linux Nix flake for **systembug** applications.
 | **reasongraph** | [borg0ai/dx-reasongraph](https://github.com/borg0ai/dx-reasongraph) | `nix profile install github:systembugtj/cangjie-nix#reasongraph` |
 | **Ghostty** | [matrix0ai/dx-qingluan](https://github.com/matrix0ai/dx-qingluan) | `nix profile install github:systembugtj/cangjie-nix#ghostty` |
 | **libghostty-vt** | [matrix0ai/dx-qingluan](https://github.com/matrix0ai/dx-qingluan) | `nix profile install github:systembugtj/cangjie-nix#libghostty-vt` |
+| **issuegraph** | [borg0ai/dx-issuegraph](https://github.com/borg0ai/dx-issuegraph) | `nix profile install github:systembugtj/cangjie-nix#issuegraph` |
 
 ## Quick start
 
