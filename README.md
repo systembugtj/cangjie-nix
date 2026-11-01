@@ -11,6 +11,7 @@ Linux Nix flake for **systembug** applications.
 | **Ghostty** | [matrix0ai/dx-qingluan](https://github.com/matrix0ai/dx-qingluan) | `nix profile install github:systembugtj/cangjie-nix#ghostty` |
 | **libghostty-vt** | [matrix0ai/dx-qingluan](https://github.com/matrix0ai/dx-qingluan) | `nix profile install github:systembugtj/cangjie-nix#libghostty-vt` |
 | **issuegraph** | [borg0ai/dx-issuegraph](https://github.com/borg0ai/dx-issuegraph) | `nix profile install github:systembugtj/cangjie-nix#issuegraph` |
+| **brainstorm-server** | [borg0ai/designify](https://github.com/borg0ai/designify) | `nix profile install github:systembugtj/cangjie-nix#brainstorm-server` |
 
 ## Quick start
 
