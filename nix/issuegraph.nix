@@ -38,7 +38,10 @@ stdenv.mkDerivation {
     description = "Git-tracked issue graph CLI for coding agents";
     homepage = "https://github.com/borg0ai/dx-issuegraph";
     license = licenses.mit;
-    platforms = [ "x86_64-linux" "aarch64-linux" ];
+    platforms = [
+      "x86_64-linux"
+      "aarch64-linux"
+    ];
     mainProgram = "issuegraph";
   };
 }
